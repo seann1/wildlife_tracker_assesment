@@ -2,3 +2,7 @@
 
 <button><a href="/">Home</a></button>
 <button><a href="/species/<%= @species.id %>/edit">Edit</a></button>
+<button><a href="/species/<%=@species.id%>"
+    data-confirm="Are you sure?"
+    data-method="delete" rel="nofollow">
+    Delete</a></button>

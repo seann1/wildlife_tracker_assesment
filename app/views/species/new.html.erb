@@ -1,13 +1,6 @@
 <h1>New Species</h1>
 
-<% if @species.errors.any? %>
-<h3> Please fix these errors:</h3>
-<ul>
-  <% @species.errors.full_messages.each do |message| %>
-  <li><%= message %></li>
-  <% end %>
-</ul>
-  <% end %>
+<%= render('errors') %>
 
 <div class="form-group">
   <form action="/species/new" method="post">

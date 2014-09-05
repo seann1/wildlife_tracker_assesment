@@ -15,7 +15,7 @@ class SpeciesController < ApplicationController
   end
   
   def create
-    @species = Species.new(:name => params[:name])
+    @species = Species.new(params[:species])
 
     if @species.save
       flash[:notice] = "Your species was saved"
@@ -33,10 +33,17 @@ class SpeciesController < ApplicationController
   
   def update
     @species = Species.find(params[:id])
-    if @species.update(:name => params[:name])
+    if @species.update(params[:species])
       redirect_to("/")
     else
       render('species/edit.html.erb')
     end
+  end
+  
+  def destroy
+    @species = Species.find(params[:id])
+    @species.destroy
+    flash[:notice] = "Species destroyed"
+    redirect_to('/')
   end
 end

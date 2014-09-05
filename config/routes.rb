@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   match('species/:id', {:via => :get, :to => 'species#show'})
   match('species/:id/edit', {:via => :get, :to => 'species#edit'})
   match('species/:id', {:via => [:patch, :put], :to => 'species#update'})
+  match('species/:id', {:via => :delete, :to => 'species#destroy'})
 end
