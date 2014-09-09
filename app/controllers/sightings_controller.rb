@@ -19,5 +19,6 @@ class SightingsController < ApplicationController
   end
   
   def create
+  end
     
   end
