@@ -31,4 +31,8 @@ class SightingsController < ApplicationController
     end
   end
 
+  def show
+    @sighting = Sighting.find(params[:sighting_id])
+  end
+
   end

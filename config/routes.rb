@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   match('sightings', {:via => :get, :to => 'sightings#index'})
   match('species/:id/sightings', {:via => :post, :to => 'sightings#create'})
   match('species/:id/sightings/new', {:via => :get, :to => 'sightings#new'})
+  match('species/:id/sightings/:sighting_id', {:via => :get, :to => 'sightings#show'})
 end
