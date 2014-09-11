@@ -2,7 +2,7 @@ Wildlife Tracker for [Conventional rails assessment](http://www.learnhowtoprogra
 
 This application lets users create lists of animals and list sightings for each animal.
 
-the app is on [Heroku](http://wildlife-assesment.herokuapp.com/).
+The app is on [Heroku](http://wildlife-assesment.herokuapp.com/).
 
 ##Setup
 In your terminal, clone this repo:
