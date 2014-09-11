@@ -36,7 +36,7 @@ $ rails s
 ```
 The app should be available now at 'localhost:3000'
 
-##License
+License
 MIT
 
 README inspired by [Nick Bernard](http://nrbernard.com)
