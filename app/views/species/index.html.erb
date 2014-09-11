@@ -1,9 +1,9 @@
 <h1>All Species</h1>
 
 <ul>
-  <% @species.each do |i| %>
-  <li><a href="/species/<%= @species.first.id %>"><%= i.name %></li></a>
+  <% Species.all.each do |i| %>
+  <li><a href="/species/<%= i.id %>"><%= i.name %></li></a>
   <% end %>
 <ul>
-  
+
   <button><a href="/species/new">New Species</a></button>
