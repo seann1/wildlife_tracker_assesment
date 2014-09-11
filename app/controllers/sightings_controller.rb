@@ -36,12 +36,13 @@ class SightingsController < ApplicationController
   end
 
   def edit
-    @sighting = Sighting.find(params[:sighting])
+    @species = Species.find(params[:id])
+    @sighting = Sighting.find(params[:sighting_id])
     render('sightings/edit.html.erb')
   end
 
   def update
-    @sighting = Sighting.find(params[:sighting])
+    @sighting = Sighting.find(params[:sighting_id])
     @species = Species.find(params[:id])
     if @sighting.update(params[:sighting])
       flash[:notice] = "Your sighting was updated"

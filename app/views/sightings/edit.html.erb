@@ -1,3 +1,6 @@
-<form action="/species/<%= @species.id %>/sightings/<%= @sighting.id %>" method="put">
+<%= render('errors') %>
+
+<form action="/species/<%= @species.id %>/sightings/<%= @sighting.id %>" method="post">
+  <input name="_method" type="hidden" value="patch">
 <%= render('form') %>
   </form>

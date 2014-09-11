@@ -1,7 +1,7 @@
 <h2><%= @sighting.species.name %> | <%= @sighting.longitude %> | <%= @sighting.latitude %> | <%= @sighting.date %></h2>
 
 <button><a href="/">Home</a></button>
-<button><a href="edit">Edit</a></button>
+<button><a href="<%= @sighting.id %>/edit">Edit</a></button>
 <button><a href="/species/<%= @species.id %>/sightings/<%= @sighting.id %>"
     data-confirm="Are you sure?"
     data-method="delete" rel="nofollow">

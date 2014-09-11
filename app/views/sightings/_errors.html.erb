@@ -1,0 +1,10 @@
+<% if @sighting.errors.any? %>
+  <br />
+  <h3>Please fix these errors:</h3>
+  <ul>
+    <% @sighting.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+  <br />
+<% end %>

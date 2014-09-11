@@ -1,0 +1,10 @@
+<% if @species.errors.any? %>
+  <br />
+  <h3>Please fix these errors:</h3>
+  <ul>
+    <% @species.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+  <br />
+<% end %>
