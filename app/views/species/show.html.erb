@@ -1,5 +1,21 @@
 <h1><%= @species.name %></h1>
 
+<h2>Existing sightings:</h2>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr class="active">
+      <th>Latitude</th><th>Longitude</th><th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @species.sightings.each do |time| %>
+    <tr class="primary"><td><a href="/species/<%= @species.id %>/sightings/<%= time.id %>"><%= time.latitude %></td>    <td><%= time.longitude %></td><td><%= time.date %></td>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+
 <button><a href="/">Home</a></button>
 <button><a href="/species/<%= @species.id %>/edit">Edit</a></button>
 <button><a href="/species/<%=@species.id%>"

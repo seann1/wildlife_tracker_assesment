@@ -1,13 +1,13 @@
 <div class="form-group">
 
   <label class="control-label" for="latitude">Latitude</label>
-  <input class="form-control" id="latitude" name="latitude" type="text" value="<%= @sighting.latitude %>">
+  <input class="form-control" id="latitude" name="sighting[latitude]" type="text" value="<%= @sighting.latitude %>">
 
   <label class="control-label" for="longitude">Longitude</label>
-  <input class="form-control" id="longitude" name="longitude" type="text" value="<%= @sighting.longitude %>">
+  <input class="form-control" id="longitude" name="sighting[longitude]" type="text" value="<%= @sighting.longitude %>">
 
   <label class="control-label" for="date">Date</label>
-  <input class="form-control" id="date" name="date" type="text" value="<%= @sighting.date %>">
+  <input class="form-control" id="date" name="sighting[date]" type="text" value="<%= @sighting.date %>">
   <button class="btn btn-default">Enter Sighting</button>
 
 </div>
